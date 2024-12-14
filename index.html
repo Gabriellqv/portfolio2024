@@ -1,49 +1,632 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabriel Queiroz | Portfolio</title>
-  <meta name="description" content="Portfolio do desenvolvedor front-end Gabriel Queiroz">
-  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header__brand">
-      <img class="brand__logo" src="/assets/images/GQ.png" alt="Logo GQ">
-    </div>
-    <i id="toggleTheme" class="bi bi-sun"></i>
-  </header>
-  <nav>
-    <ul class="menu menu--mobile">
-      <li class="menu__item">
-        <a class="menu__link active" href="#home">
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Queiroz | Portfolio</title>
+    <meta name="description" content="Portfolio do Desenvolvedor front-end Gabriel Queiroz">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="menu menu--principal">
+          <li class="menu__item">
+            <a class="menu__link active" href="#home">
+            <span class="menu__text">Home</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#projetos">
+            <span class="menu__text">Projetos</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#sobre">
+            <span class="menu__text">Sobre</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contato">
+            <span class="menu__text">Contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__brand">
+        <img class="brand__logo" src="/assets/images/GQ.png" alt="Logo GQ">
+      </div>
+      <div class="header__toggle">
+        <i id="toggleTheme" class="bi bi-sun"></i>
+      </div>
+    </header>
+    <nav class="nav--mobile">
+      <ul class="menu menu--mobile">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
           <i class="menu__icon bi bi-house-door"></i>
           <span class="menu__text">Home</span>
-        </a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#projetos">
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
           <i class="menu__icon bi bi-window-stack"></i>
           <span class="menu__text">Projetos</span>
-        </a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#sobre">
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
           <i class="menu__icon bi bi-person"></i>
           <span class="menu__text">Sobre</span>
-        </a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#contato">
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
           <i class="menu__icon bi bi-envelope"></i>
           <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="main__content1">
+        <h1><b>Soluções Criativas &</b> Desenvolvimento Front-end</h1>
+        <p>Gabriel Queiroz, São Paulo-SP, Desenvolvedor Front-end.</p>
+        <ul class="menu menu--social">
+          <li>
+            <a class="menu__link" href="https://github.com/Gabriellqv">
+            <i class="menu__icon bi bi-github"></i>
+            </a>
+          </li>
+          <li>
+            <a class="menu__link" href="https://www.linkedin.com/in/gabriellqv/">
+            <i class="menu__icon bi bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <a href="#projetos">
+          <button class="btn btn--primary">
+          <span>Ver Projetos</span>
+          <i class="bi bi-arrow-up-right"></i>
+          </button>
         </a>
-      </li>
-    </ul>
-  </nav>
-  <h1>Gabriel Queiroz</h1>
-</body>
+      </div>
+      <div class="main__content2">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZrsT4J3E0YQ?si=UKb1qb8aC_D0OWZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </main>
+    <section class="technologies">
+      <h2>Conhecimento nas principais tecnologias do mercado</h2>
+      <ul class="technologies__list">
+        <li class="technologies__item">
+          <img class="technologies__logo" src="/assets/images/technologies/javascript.svg" alt="Logo Javascript">
+        </li>
+        <li class="technologies__item">
+          <img class="technologies__logo" src="/assets/images/technologies/typescript.svg" alt="Logo Typescript">
+        </li>
+        <li class="technologies__item">
+          <img class="technologies__logo" src="/assets/images/technologies/react.svg" alt="Logo React">
+        </li>
+        <li class="technologies__item">
+          <img class="technologies__logo" src="/assets/images/technologies/tailwind.svg" alt="Logo Tailwind">
+        </li>
+      </ul>
+    </section>
+    <section id="projetos" class="projects">
+      <h2>Projetos</h2>
+      <div class="projects__container">
+        <div class="projects__card">
+          <img class="card__cover" src="/assets/images/projects/spotify.jpg" alt="Spotify Clone Project">
+          <div class="card__body">
+            <h3 class="card__title">Spotify Clone Project</h3>
+            <p class="card__description">Clone do Spotify</p>
+            <ul class="card__list">
+              <li>Reprodução de músicas;</li>
+              <li>Controle de mídia;</li>
+              <li>Interface intuitiva;</li>
+              <li>Responsividade;</li>
+              <li>Gerenciamento de estado.</li>
+              </li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/javascript.svg" alt="Logo Javascript">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/react.svg" alt="Logo React">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/tailwind.svg" alt="Logo Tailwind">
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://spotify-clone-ten-smoky.vercel.app" target="_blank">
+                <button class="btn btn--primary">
+                <span>Prévia do Projeto</span>
+                <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+                <a href="https://github.com/Gabriellqv/spotifyClone" target="_blank">
+                <button class="btn">
+                <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card card--reverse">
+          <img class="card__cover" src="/assets/images/projects/movieslib.jpg" alt="Movies Lib Project">
+          <div class="card__body">
+            <h3 class="card__title">Movies Lib Project</h3>
+            <p class="card__description">Site de Filmes</p>
+            <ul class="card__list">
+              <li>Pesquisa de Filmes;</li>
+              <li>Exibição de Detalhes do Filme;</li>
+              <li>Listagem de Filmes Populares;</li>
+              <li>Classificação e Avaliações de Filmes;</li>
+              <li>Integração com APIs de Filmes.</li>
+              </li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/javascript.svg" alt="Logo Javascript">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/react.svg" alt="Logo React">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/css.svg" alt="Logo Css">
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://movies-lib-flame.vercel.app" target="_blank">
+                <button class="btn btn--primary">
+                <span>Prévia do Projeto</span>
+                <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a href="https://github.com/Gabriellqv/moviesLib" target="_blank">
+                <button class="btn">
+                <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card">
+          <img class="card__cover" src="/assets/images/projects/bookhub.jpg" alt="Book Hub Project">
+          <div class="card__body">
+            <h3 class="card__title">Book Hub Project</h3>
+            <p class="card__description">Site de Livros</p>
+            <ul class="card__list">
+              <li>Busca de livros;</li>
+              <li>Página de Detalhes;</li>
+              <li>Responsividade;</li>
+              <li>Acessibilidade;</li>
+              </li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/javascript.svg" alt="Logo Javascript">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/react.svg" alt="Logo React">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/css.svg" alt="Logo Css">
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://book-search-site-self.vercel.app" target="_blank">
+                <button class="btn btn--primary">
+                <span>Prévia do Projeto</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              </button>
+              <a href="https://github.com/Gabriellqv/Book-Search-Site" target="_blank">
+                <button class="btn">
+                <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card card--reverse">
+          <img class="card__cover" src="/assets/images/projects/spidermanmultiverse.jpg" alt="Spider man Project">
+          <div class="card__body">
+            <h3 class="card__title">Spider Man Project</h3>
+            <p class="card__description">Site temático do Homem Aranha</p>
+            <ul class="card__list">
+              <li>Página de Filmes;</li>
+              <li>Galeria de Imagens;</li>
+              <li>Navegação em 3D;</li>
+              <li>Detalhes do filme;</li>
+              </li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/javascript.svg" alt="Logo Javascript">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/css.svg" alt="Logo Css">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/html.svg" alt="Logo Html">
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://spider-man-multiverse-puce.vercel.app" target="_blank">
+                <button class="btn btn--primary">
+                <span>Prévia do Projeto</span>
+                <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a href="https://github.com/Gabriellqv/spider-man-multiverse" target="_blank">
+                <button class="btn">
+                <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card">
+          <img class="card__cover" src="/assets/images/projects/strangerthings.jpg" alt="Stranger Things Landing Page Project">
+          <div class="card__body">
+            <h3 class="card__title">Stranger Things Landing Page Project</h3>
+            <p class="card__description">Landing Page Sranger Things</p>
+            <ul class="card__list">
+              <li>Alteração entre temas;</li>
+              <li>Áudio dinâmico;</li>
+              <li>Galeria de imagens;</li>
+              </li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/javascript.svg" alt="Logo Javascript">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/html.svg" alt="Logo Html">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/css.svg" alt="Logo Css">
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://landing-page-mundo-invertido-azure.vercel.app" target="_blank">
+                <button class="btn btn--primary">
+                <span>Prévia do Projeto</span>
+                <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a href="https://github.com/Gabriellqv/landing-page-mundo-invertido" target="_blank">
+                <button class="btn">
+                <span>Repositório</span>
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card card--reverse">
+          <img class="card__cover" src="/assets/images/projects/yugiohjokenpo.jpg" alt="Yugioh Jokenpo">
+          <div class="card__body">
+            <h3 class="card__title">Yugioh Jokenpo</h3>
+            <p class="card__description">Jogo de Jokenpo de Yugioh</p>
+            <ul class="card__list">
+              <li>Rodadas com cartas aleatórias;</li>
+              <li>Música de fundo;</li>
+              <li>Animações;</li>
+              <li>Pontuação;</li>
+              </li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/javascript.svg" alt="Logo Javascript">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/css.svg" alt="Logo Css">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/html.svg" alt="Logo Html">
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://js-yugioh-jokenpo.vercel.app" target="_blank">
+                <button class="btn btn--primary">
+                <span>Prévia do Projeto</span>
+                <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a href="https://github.com/Gabriellqv/js-yugioh-jokenpo" target="_blank">
+                <button class="btn">
+                <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card">
+          <img class="card__cover" src="/assets/images/projects/detonaralph.jpg" alt="Detona Ralph">
+          <div class="card__body">
+            <h3 class="card__title">Jogo de Whack-a-Mole do Detona Ralph</h3>
+            <p class="card__description">Jogo de Whack-a-Mole do Detona Ralph</p>
+            <ul class="card__list">
+              <li>Painel de jogo dinâmico;</li>
+              <li>Sistema de pontuação;</li>
+              <li>Tempo limitado;</li>
+              <li>Indicador de vidas;</li>
+              </li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/javascript.svg" alt="Logo Javascript">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/html.svg" alt="Logo Html">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/css.svg" alt="Logo Css">
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://detona-ralph-khaki.vercel.app" target="_blank">
+                <button class="btn btn--primary">
+                <span>Prévia do Projeto</span>
+                <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+                <a href="https://github.com/Gabriellqv/detona-ralph" target="_blank">
+                <button class="btn">
+                <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card card--reverse">
+          <img class="card__cover" src="/assets/images/projects/jogomemoria.jpg" alt="Jogo da Memória">
+          <div class="card__body">
+            <h3 class="card__title">Jogo da Memória</h3>
+            <p class="card__description">Jogo da Memória com Emojis</p>
+            <ul class="card__list">
+              <li>Embaralhamento de cartas;</li>
+              <li>Interface intuitiva;</li>
+              <li>Feedback visual;</li>
+              <li>Reinício do jogo;</li>
+              </li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/javascript.svg" alt="Logo Javascript">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/css.svg" alt="Logo Css">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/html.svg" alt="Logo Html">
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://jogo-da-memoria-two-delta.vercel.app" target="_blank">
+                <button class="btn btn--primary">
+                <span>Prévia do Projeto</span>
+                <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a href="https://github.com/Gabriellqv/jogo-da-memoria" target="_blank">
+                <button class="btn">
+                <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card">
+          <img class="card__cover" src="/assets/images/projects/piano.jpg" alt="Piano Virtual">
+          <div class="card__body">
+            <h3 class="card__title">Piano Virtual</h3>
+            <p class="card__description">Piano Virtual</p>
+            <ul class="card__list">
+              <li>Teclas do piano;</li>
+              <li>Volume;</li>
+              <li>Alternância de teclas visíveis;</li>
+              <li>Design responsivo;</li>
+              </li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/javascript.svg" alt="Logo Javascript">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/html.svg" alt="Logo Html">
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="/assets/images/technologies/css.svg" alt="Logo Css">
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://pianojs-delta.vercel.app" target="_blank">
+                <button class="btn btn--primary">
+                <span>Prévia do Projeto</span>
+                <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a href="https://github.com/Gabriellqv/Pianojs" target="_blank">
+                <button class="btn">
+                <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sobre" class="about">
+      <div class="about__content1">
+        <img class="about__photo" src="assets/images/avatar.jpg" alt="">
+        <div class="about__description">
+          <h2>Sobre mim</h2>
+          <p>Desenvolvedor Front-End com bacharelado em Ciências da Computação e experiência em HTML5, CSS3, JavaScript, TypeScript, ReactJS e NodeJS. Apaixonado por tecnologia, com habilidades para criar interfaces dinâmicas e responsivas. Minha experiência na Força Aérea Brasileira aprimorou minha comunicação e capacidade de trabalhar sob pressão, além de facilitar o trabalho em equipe e a interação com o público. Busco constantemente expandir meus conhecimentos e aprimorar minhas habilidades.
+          </p>  
+          <div class="about__icons">
+            <i class="bi bi-translate"></i>
+            <span>Inglês: Intermediário | Espanhol: Básico</span>
+          </div>
+          <div class="description__buttons">
+            <a href="https://www.linkedin.com/in/gabriellqv/" target="_blank">
+              <button class="btn btn--primary">
+                <span>Conecte-se Comigo</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button> 
+            </a>
+            <a href="https://www.linkedin.com/in/gabriellqv/">
+              <button class="btn">
+                <span>Currículo</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="about__content2">
+        <div class="col1">
+          <div class="row1">
+            <h3>Formação</h3>
+            <h4>Ciências da Computação</h4>
+            <span>jan 2018 - Nov 2023</span>
+            <div class="about__icons">
+              <i class="bi bi-bank"></i>
+              <span>Universidade Nove de Julho</span>
+            </div>
+            <div class="about__icons">
+              <i class="bi bi-mortarboard"></i>
+              <span>Bacharelado</span>
+            </div>
+          </div>
+          <div class="row2">
+            <h3>Experiências</h3>
+            <h4>Soldado de Segunda Classe (S2)</h4>
+            <span>Soldado. Mar 2019 - Mar 2020</span>
+            <span>Experiência em ambientes de alta pressão, lidando com operações diárias e missões críticas. Desenvolvimento de habilidades em trabalho em equipe, comunicação eficaz e adaptação a diversas funções. Suporte nas atividades operacionais e administrativas, promovendo a cooperação e garantindo o cumprimento de protocolos rigorosos.
+            </span>
+            <ul class="about__list">
+              <li class="about__item">Atuação em situações de alta pressão;</li>
+              <li class="about__item">Desenvolvimento de habilidades de resolução de problemas;</li>
+              <li class="about__item">Capacidade de adaptação a diversas funções.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col2">
+          <h3>Cursos</h3>
+          <div id="accordion">
+            <div class="accordion__item active">
+              <button class="accordion__header start">
+                <span>Scrum Foundation Professional Certificate - SFPC™</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>
+                  Certiprof. Mai 2021.
+                </p>
+                <p>
+                  Certificação que valida o conhecimento fundamental sobre o framework Scrum, incluindo os papéis do Scrum Master, Product Owner e Time de Desenvolvimento. Conhecimento sobre eventos e artefatos Scrum, focando na entrega contínua de valor e melhoria contínua. Ideal para aplicar práticas ágeis em equipes e projetos de desenvolvimento de produtos.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                <span>Versionamento de Código com Git e GitHub</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>
+                  Digital Innovation One. Mai 2024 2h.
+                </p>
+                <p>
+                  O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas 
+                  operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem 
+                  até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar alterações 
+                  com o repositório remoto. 
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                <span>Santander 2024 - Backend com Java</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>
+                  Digital Innovation One. Mai 2024 87h.
+                </p>
+                <p>
+                  Participação no programa de capacitação intensiva em Backend com Java, focado no desenvolvimento de soluções escaláveis e eficientes. Aprofundamento em conceitos avançados de Java, integração com bancos de dados, e desenvolvimento de APIs RESTful. Desenvolvimento de habilidades práticas na criação de sistemas backend robustos, aplicando as melhores práticas de codificação e arquitetura de software. Ideal para profissionais que buscam especialização em backend utilizando Java.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                <span>Programação Orientada a Objetos com Java</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>
+                  Digital Innovation One. Jun 2024 20h.
+                </p>
+                <p>
+                  Certificação que aborda os princípios fundamentais da programação orientada a objetos (POO) usando Java. Inclui tópicos como classes, objetos, herança, polimorfismo, encapsulamento e abstração. Capacita para o desenvolvimento de aplicações robustas e escaláveis, com foco na estruturação e organização eficiente do código. Ideal para implementar boas práticas de programação em projetos Java.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header end">
+                <span>Ri Happy - Front-end do Zero</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body end">
+                <p>
+                  Digital Innovation One. Dec 2024 87h.
+                </p>
+                <p>
+                  Formação focada no desenvolvimento front-end, abordando tecnologias essenciais como HTML, CSS e JavaScript. Aprendizado prático na criação de interfaces interativas e responsivas, além de boas práticas de desenvolvimento e design. Capacitação para construir páginas web dinâmicas e otimizar a experiência do usuário, com ênfase em usabilidade e acessibilidade. Ideal para iniciantes que desejam ingressar no desenvolvimento front-end com uma base sólida.
+                </p>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+    <section id="contato" class="contact">
+      <h2>Contate-me</h2>
+      <p>Estou disponível para serviços e novas conexões. Contate-me via 
+        e-mail e conecte-se comigo através das minhas redes sociais.
+      </p>
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/Gabriellqv" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+            <span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/gabriellqv/" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+      </ul>
+      <a href="mailto:gabriellqv@gmail.com">
+        <button class="btn btn--primary">
+          <span class="email">gabriellqv@gmail.com</span>
+        </button>  
+      </a>
+    </section>
+    <footer>
+      <p>
+        © 2023. Portfólio desenvolvido para fins educativos no Lab "Construindo seu Portfolio Front-end do Zero" da 
+        <a href="https://www.dio.me/" target="_blank">Digital Innovation One</a> por 
+        <a href="https://github.com/Gabriellqv" target="_blank">Gabriel Queiroz</a>.
+      </p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
