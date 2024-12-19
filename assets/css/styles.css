@@ -139,7 +139,6 @@ p {
 #toggleTheme {
   font-size: 1.5rem;
   color: var(--primary-color);
-  cursor: pointer;
   transition: ease-in-out .4s;
 }
 
@@ -216,7 +215,6 @@ p {
   border: none;
   padding: 0.875rem 1.5rem;
   transition: ease-in-out .3s;
-  cursor: pointer;
   color: var(--primary-color);
 }
 
@@ -440,7 +438,6 @@ main {
   border: 1px solid var(--primary-border-color);
   background: transparent;
   text-align: left;
-  cursor: pointer;
   transition: ease-in-out .3s;
 }
 
